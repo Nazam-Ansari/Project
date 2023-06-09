@@ -1,0 +1,113 @@
+<html>	
+	<head>
+		<title>Basic Layout</title>
+		<style>
+			:root{
+				--main-color:crimson;
+			}
+			body{
+				font-family:arial;
+				margin:0;
+				padding:0;
+				background:slategray;
+			#wrapper{
+				border:0px solid black;
+				background:white;
+				width : 1000px;
+				
+				background : white;
+				margin:0 auto;
+				
+			}
+			#header{
+				background:var(--main-color);
+				height:100px;
+				color:white;
+				margin:0px;
+			}
+			#header h1{
+				padding:25px
+			}
+			#menu{
+				background:lightsalmon;
+				padding:15px;
+			}
+			#menu li{
+				display:inline-block;
+				}
+			#menu li a{
+				display-block;
+				padding:15px;
+				text-decoration:none;
+				color:black;
+				}
+			#menu li a:hover{
+				background-color:var(--main-color);
+				color:white;
+			}
+			#menu ul{
+				margin:0;
+			}
+			#content{
+				width : 800px;
+				border:0px solid black;
+				float:left;
+				min-height:500px;
+				padding : 10px;
+				box-sizing:border-box;
+			}
+			#content h2{
+				color:var(--main-color);
+			}
+			#sidebar {
+				width:200px;
+				background:lightblue;
+				float:right;
+				min-height:500px;
+				text-decoration:none;
+			}
+			#sidebar a{
+				text-decoration:none;
+				color:black;
+				
+			}
+			#footer{
+				clear:both;
+				padding:10px;
+				text-align:right;
+				background:lightsalmon;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "wrapper">
+			<div id="header">
+				<h1>Website Name</h1>
+			</div>
+			<div id = "Menu">
+				<ul>
+					<li><a href ="">Home</a></li>
+					<li><a href ="">About us</a></li>
+					<li><a href ="">Gallery</a></li>
+					<li><a href ="">Contact us</a></li>
+			</div>
+			<div id = "content">
+				<h2>Sub Heading</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante vitae nisl hendrerit commodo vel sit amet turpis. Maecenas vitae est ligula. Curabitur nec magna lacus. Vestibulum euismod sollicitudin congue. Duis vitae lacus leo. Integer ex leo, tincidunt in eros sed, sollicitudin auctor tortor. In urna lacus, pretium et ante lacinia, ornare laoreet nisl. Sed accumsan orci nisi, rutrum hendrerit ligula posuere id. Aliquam lacinia ornare massa, quis rutrum orci tincidunt non. Etiam a nibh iaculis, pharetra sapien sed, aliquet sapien.
+				</p>
+				<p>
+					Nunc diam turpis, bibendum ut dolor ac, placerat faucibus lacus. Maecenas scelerisque elementum lorem, eget ultrices lorem cursus ac. Donec eget lorem nec arcu iaculis interdum. Vestibulum imperdiet enim eu nulla rhoncus, eu sodales nisi lobortis. Nam viverra a leo lobortis aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec efficitur ipsum eros, quis tincidunt orci pharetra vestibulum. Nunc non nunc nunc. Sed vel sollicitudin justo.
+				</p>
+			</div>
+			<div id = "Sidebar">
+				<ul>
+					<a href=""><li>Home</li></a>
+					<a href=""><li>contact us</li></a>
+					<a href=""><li>Gallery</li></a>
+					<a href=""><li>About us</li></a>
+				</ul>
+			</div>
+			<div id = "footer">websitename@Copyright</div>
+		</div>
+</html>
